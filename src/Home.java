@@ -33,30 +33,27 @@ public class Home extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
-        jPanel1 = new javax.swing.JPanel();
-        jLabel19 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
-        jPanel2 = new javax.swing.JPanel();
-        jLabel15 = new javax.swing.JLabel();
-        jLabel20 = new javax.swing.JLabel();
-        jPanel3 = new javax.swing.JPanel();
-        jLabel16 = new javax.swing.JLabel();
-        jLabel21 = new javax.swing.JLabel();
-        jPanel4 = new javax.swing.JPanel();
-        jLabel17 = new javax.swing.JLabel();
-        jLabel22 = new javax.swing.JLabel();
-        jPanel5 = new javax.swing.JPanel();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel18 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
+        jPanel7 = new javax.swing.JPanel();
         jPanel6 = new javax.swing.JPanel();
         jLabel23 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        roundRadiusPanel2 = new RoundRadiusPanel();
+        jLabel26 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        roundRadiusPanel3 = new RoundRadiusPanel();
+        jLabel27 = new javax.swing.JLabel();
+        jLabel28 = new javax.swing.JLabel();
+        roundRadiusPanel4 = new RoundRadiusPanel();
+        jLabel29 = new javax.swing.JLabel();
+        jLabel30 = new javax.swing.JLabel();
+        roundRadiusPanel5 = new RoundRadiusPanel();
+        jLabel31 = new javax.swing.JLabel();
+        jLabel32 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(1920, 1080));
@@ -64,10 +61,9 @@ public class Home extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setText("________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 150, -1, -1));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 150, 1920, -1));
 
         jLabel3.setFont(new java.awt.Font("Times New Roman", 0, 45)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("NORMAN MANGUSIN UNIVERISTY");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 30, 730, -1));
 
@@ -82,10 +78,6 @@ public class Home extends javax.swing.JFrame {
         jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         jLabel5.setText("Generate Report");
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(1360, 140, -1, -1));
-
-        jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        jLabel6.setText("Dashboard");
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 200, -1, -1));
 
         jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         jLabel7.setText("Student Registration");
@@ -107,90 +99,12 @@ public class Home extends javax.swing.JFrame {
         jLabel11.setText("Dashboard");
         getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 140, -1, -1));
 
-        jPanel1.setBackground(new java.awt.Color(204, 204, 204));
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel19.setFont(new java.awt.Font("Segoe UI", 1, 30)); // NOI18N
-        jLabel19.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel19.setText("Total Students");
-        jPanel1.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(24, 39, -1, -1));
-
-        jLabel14.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
-        jLabel14.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel14.setText("---");
-        jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, -1, -1));
-
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 270, 300, 210));
-
-        jPanel2.setBackground(new java.awt.Color(204, 204, 204));
-        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel15.setFont(new java.awt.Font("Segoe UI", 1, 30)); // NOI18N
-        jLabel15.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel15.setText("Total Teachers");
-        jPanel2.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 40, -1, -1));
-
-        jLabel20.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
-        jLabel20.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel20.setText("---");
-        jPanel2.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, -1, -1));
-
-        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 270, 300, 210));
-
-        jPanel3.setBackground(new java.awt.Color(204, 204, 204));
-        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel16.setFont(new java.awt.Font("Segoe UI", 1, 30)); // NOI18N
-        jLabel16.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel16.setText("Total Courses");
-        jPanel3.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 40, -1, -1));
-
-        jLabel21.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
-        jLabel21.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel21.setText("---");
-        jPanel3.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 110, -1, -1));
-
-        getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 270, 300, 210));
-
-        jPanel4.setBackground(new java.awt.Color(204, 204, 204));
-        jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel17.setFont(new java.awt.Font("Segoe UI", 1, 30)); // NOI18N
-        jLabel17.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel17.setText("Total Enrollments");
-        jPanel4.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 40, -1, -1));
-
-        jLabel22.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
-        jLabel22.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel22.setText("---");
-        jPanel4.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 110, -1, -1));
-
-        getContentPane().add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1150, 270, 300, 210));
-
-        jPanel5.setBackground(new java.awt.Color(204, 204, 204));
-        jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel12.setFont(new java.awt.Font("Segoe UI", 1, 30)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel12.setText("Summary");
-        jPanel5.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 70, -1, -1));
-
-        jLabel18.setFont(new java.awt.Font("Segoe UI", 1, 30)); // NOI18N
-        jLabel18.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel18.setText("Attendance");
-        jPanel5.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 40, -1, -1));
-
-        jLabel13.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
-        jLabel13.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel13.setText("---");
-        jPanel5.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, -1, -1));
-
-        getContentPane().add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(1500, 270, 310, 210));
+        jPanel7.setBackground(new java.awt.Color(242, 242, 255));
+        jPanel7.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel6.setBackground(new java.awt.Color(153, 153, 153));
 
         jLabel23.setFont(new java.awt.Font("Segoe UI", 1, 60)); // NOI18N
-        jLabel23.setForeground(new java.awt.Color(0, 0, 0));
         jLabel23.setText("GRAPH");
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
@@ -205,12 +119,142 @@ public class Home extends javax.swing.JFrame {
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel6Layout.createSequentialGroup()
-                .addGap(165, 165, 165)
+                .addGap(217, 217, 217)
                 .addComponent(jLabel23)
-                .addContainerGap(214, Short.MAX_VALUE))
+                .addContainerGap(162, Short.MAX_VALUE))
         );
 
-        getContentPane().add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 540, 1420, 460));
+        jPanel7.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 370, 1420, 460));
+
+        jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel6.setText("Dashboard");
+        jPanel7.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 20, -1, -1));
+
+        roundRadiusPanel2.setBackground(new java.awt.Color(203, 233, 198));
+
+        jLabel26.setFont(new java.awt.Font("Segoe UI", 1, 30)); // NOI18N
+        jLabel26.setText("Total Students");
+
+        jLabel19.setFont(new java.awt.Font("Segoe UI", 1, 30)); // NOI18N
+        jLabel19.setText("---");
+
+        javax.swing.GroupLayout roundRadiusPanel2Layout = new javax.swing.GroupLayout(roundRadiusPanel2);
+        roundRadiusPanel2.setLayout(roundRadiusPanel2Layout);
+        roundRadiusPanel2Layout.setHorizontalGroup(
+            roundRadiusPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(roundRadiusPanel2Layout.createSequentialGroup()
+                .addGap(39, 39, 39)
+                .addGroup(roundRadiusPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel19)
+                    .addComponent(jLabel26))
+                .addContainerGap(55, Short.MAX_VALUE))
+        );
+        roundRadiusPanel2Layout.setVerticalGroup(
+            roundRadiusPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(roundRadiusPanel2Layout.createSequentialGroup()
+                .addGap(38, 38, 38)
+                .addComponent(jLabel26)
+                .addGap(32, 32, 32)
+                .addComponent(jLabel19)
+                .addContainerGap(58, Short.MAX_VALUE))
+        );
+
+        jPanel7.add(roundRadiusPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 70, 300, 210));
+
+        roundRadiusPanel3.setBackground(new java.awt.Color(203, 233, 198));
+
+        jLabel27.setFont(new java.awt.Font("Segoe UI", 1, 30)); // NOI18N
+        jLabel27.setText("Total Teachers");
+
+        jLabel28.setFont(new java.awt.Font("Segoe UI", 1, 30)); // NOI18N
+        jLabel28.setText("---");
+
+        javax.swing.GroupLayout roundRadiusPanel3Layout = new javax.swing.GroupLayout(roundRadiusPanel3);
+        roundRadiusPanel3.setLayout(roundRadiusPanel3Layout);
+        roundRadiusPanel3Layout.setHorizontalGroup(
+            roundRadiusPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(roundRadiusPanel3Layout.createSequentialGroup()
+                .addGap(39, 39, 39)
+                .addGroup(roundRadiusPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel28)
+                    .addComponent(jLabel27))
+                .addContainerGap(57, Short.MAX_VALUE))
+        );
+        roundRadiusPanel3Layout.setVerticalGroup(
+            roundRadiusPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(roundRadiusPanel3Layout.createSequentialGroup()
+                .addGap(38, 38, 38)
+                .addComponent(jLabel27)
+                .addGap(32, 32, 32)
+                .addComponent(jLabel28)
+                .addContainerGap(58, Short.MAX_VALUE))
+        );
+
+        jPanel7.add(roundRadiusPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 70, 300, 210));
+
+        roundRadiusPanel4.setBackground(new java.awt.Color(203, 233, 198));
+
+        jLabel29.setFont(new java.awt.Font("Segoe UI", 1, 30)); // NOI18N
+        jLabel29.setText("Total Course");
+
+        jLabel30.setFont(new java.awt.Font("Segoe UI", 1, 30)); // NOI18N
+        jLabel30.setText("---");
+
+        javax.swing.GroupLayout roundRadiusPanel4Layout = new javax.swing.GroupLayout(roundRadiusPanel4);
+        roundRadiusPanel4.setLayout(roundRadiusPanel4Layout);
+        roundRadiusPanel4Layout.setHorizontalGroup(
+            roundRadiusPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(roundRadiusPanel4Layout.createSequentialGroup()
+                .addGap(39, 39, 39)
+                .addGroup(roundRadiusPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel30)
+                    .addComponent(jLabel29))
+                .addContainerGap(84, Short.MAX_VALUE))
+        );
+        roundRadiusPanel4Layout.setVerticalGroup(
+            roundRadiusPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(roundRadiusPanel4Layout.createSequentialGroup()
+                .addGap(38, 38, 38)
+                .addComponent(jLabel29)
+                .addGap(32, 32, 32)
+                .addComponent(jLabel30)
+                .addContainerGap(58, Short.MAX_VALUE))
+        );
+
+        jPanel7.add(roundRadiusPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 70, 300, 210));
+
+        roundRadiusPanel5.setBackground(new java.awt.Color(203, 233, 198));
+
+        jLabel31.setFont(new java.awt.Font("Segoe UI", 1, 30)); // NOI18N
+        jLabel31.setText("Total Enrollments");
+
+        jLabel32.setFont(new java.awt.Font("Segoe UI", 1, 30)); // NOI18N
+        jLabel32.setText("---");
+
+        javax.swing.GroupLayout roundRadiusPanel5Layout = new javax.swing.GroupLayout(roundRadiusPanel5);
+        roundRadiusPanel5.setLayout(roundRadiusPanel5Layout);
+        roundRadiusPanel5Layout.setHorizontalGroup(
+            roundRadiusPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(roundRadiusPanel5Layout.createSequentialGroup()
+                .addGap(39, 39, 39)
+                .addGroup(roundRadiusPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel32)
+                    .addComponent(jLabel31))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        roundRadiusPanel5Layout.setVerticalGroup(
+            roundRadiusPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(roundRadiusPanel5Layout.createSequentialGroup()
+                .addGap(38, 38, 38)
+                .addComponent(jLabel31)
+                .addGap(32, 32, 32)
+                .addComponent(jLabel32)
+                .addContainerGap(58, Short.MAX_VALUE))
+        );
+
+        jPanel7.add(roundRadiusPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(1310, 70, 300, 210));
+
+        getContentPane().add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 200, 1920, 880));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -244,31 +288,28 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel20;
-    private javax.swing.JLabel jLabel21;
-    private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
+    private javax.swing.JPanel jPanel7;
+    private RoundRadiusPanel roundRadiusPanel2;
+    private RoundRadiusPanel roundRadiusPanel3;
+    private RoundRadiusPanel roundRadiusPanel4;
+    private RoundRadiusPanel roundRadiusPanel5;
     // End of variables declaration//GEN-END:variables
 }

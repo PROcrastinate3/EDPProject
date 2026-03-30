@@ -123,7 +123,7 @@ public class Login extends javax.swing.JFrame {
                     .addGroup(roundRadiusPanel1Layout.createSequentialGroup()
                         .addGap(120, 120, 120)
                         .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(10, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         roundRadiusPanel1Layout.setVerticalGroup(
             roundRadiusPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -138,31 +138,33 @@ public class Login extends javax.swing.JFrame {
                 .addComponent(jLabel4)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel8)
+                .addGap(0, 0, 0)
                 .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(20, 20, 20)
                 .addComponent(jLabel7)
+                .addGap(0, 0, 0)
                 .addComponent(jPasswordField1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(30, 30, 30)
                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(50, Short.MAX_VALUE))
         );
 
-        getContentPane().add(roundRadiusPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 280, -1, -1));
+        getContentPane().add(roundRadiusPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 220, -1, -1));
 
         jLabel1.setBackground(new java.awt.Color(0, 153, 0, 100));
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/image 1.png"))); // NOI18N
         jLabel1.setText("asas");
-        jLabel1.setPreferredSize(new java.awt.Dimension(1923, 1034));
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 130, -1, -1));
+        jLabel1.setPreferredSize(new java.awt.Dimension(1440, 940));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-220, 140, 1660, 940));
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         jLabel2.setText("Sign in with your account to proceed");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 100, -1, -1));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 70, -1, -1));
 
         jLabel5.setBackground(new java.awt.Color(255, 255, 255));
         jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 30)); // NOI18N
         jLabel5.setText("LOGO");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 40, -1, -1));
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 20, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

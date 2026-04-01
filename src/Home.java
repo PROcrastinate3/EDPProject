@@ -74,6 +74,12 @@ public class Home extends javax.swing.JFrame {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 studRegMouseClicked(evt);
             }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                studRegMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                studRegMouseExited(evt);
+            }
         });
         getContentPane().add(studReg, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 140, -1, -1));
 
@@ -87,6 +93,12 @@ public class Home extends javax.swing.JFrame {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 gradeManMouseClicked(evt);
             }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                gradeManMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                gradeManMouseExited(evt);
+            }
         });
         getContentPane().add(gradeMan, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 140, -1, -1));
 
@@ -95,6 +107,12 @@ public class Home extends javax.swing.JFrame {
         dashBoard.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 dashBoardMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                dashBoardMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                dashBoardMouseExited(evt);
             }
         });
         getContentPane().add(dashBoard, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 140, -1, -1));
@@ -110,13 +128,13 @@ public class Home extends javax.swing.JFrame {
     DashBoard dash = new DashBoard();
     //StudentRegistration studReg = new StudentRegistration();
     GradeManagement gradeManage = new GradeManagement();
-    
+
     public void setPanel(javax.swing.JPanel panel) {
-    MainPanel.removeAll();
-    MainPanel.add(panel, java.awt.BorderLayout.CENTER);
-    MainPanel.revalidate();
-    MainPanel.repaint();
-}
+        MainPanel.removeAll();
+        MainPanel.add(panel, java.awt.BorderLayout.CENTER);
+        MainPanel.revalidate();
+        MainPanel.repaint();
+    }
 
     private void dashBoardMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dashBoardMouseClicked
         MainPanel.removeAll();
@@ -139,6 +157,36 @@ public class Home extends javax.swing.JFrame {
         MainPanel.revalidate();
         MainPanel.repaint();
     }//GEN-LAST:event_gradeManMouseClicked
+
+    private void dashBoardMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dashBoardMouseEntered
+        dashBoard.setForeground(java.awt.Color.BLUE);
+        dashBoard.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+    }//GEN-LAST:event_dashBoardMouseEntered
+
+    private void dashBoardMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dashBoardMouseExited
+        dashBoard.setForeground(java.awt.Color.BLACK);
+        dashBoard.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+    }//GEN-LAST:event_dashBoardMouseExited
+
+    private void studRegMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_studRegMouseEntered
+        studReg.setForeground(java.awt.Color.BLUE);
+        studReg.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+    }//GEN-LAST:event_studRegMouseEntered
+
+    private void studRegMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_studRegMouseExited
+        studReg.setForeground(java.awt.Color.BLACK);
+        studReg.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+    }//GEN-LAST:event_studRegMouseExited
+
+    private void gradeManMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_gradeManMouseEntered
+        gradeMan.setForeground(java.awt.Color.BLUE);
+        gradeMan.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+    }//GEN-LAST:event_gradeManMouseEntered
+
+    private void gradeManMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_gradeManMouseExited
+        gradeMan.setForeground(java.awt.Color.BLACK);
+        gradeMan.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+    }//GEN-LAST:event_gradeManMouseExited
 
     /**
      * @param args the command line arguments

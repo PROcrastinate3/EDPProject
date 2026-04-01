@@ -25,20 +25,166 @@ public class DashBoard extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        roundRadiusPanel1 = new RoundRadiusPanel();
         jLabel1 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        roundRadiusPanel2 = new RoundRadiusPanel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        roundRadiusPanel3 = new RoundRadiusPanel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        roundRadiusPanel4 = new RoundRadiusPanel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(0, 0, 0));
+        setBackground(new java.awt.Color(255, 255, 255));
+        setForeground(new java.awt.Color(0, 0, 0));
         setPreferredSize(new java.awt.Dimension(1245, 710));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 48)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("HAKDOG");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 280, -1, -1));
+        roundRadiusPanel1.setBackground(new java.awt.Color(203, 233, 198));
+
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 25)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel1.setText("Total Students");
+
+        jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel7.setText("---");
+
+        javax.swing.GroupLayout roundRadiusPanel1Layout = new javax.swing.GroupLayout(roundRadiusPanel1);
+        roundRadiusPanel1.setLayout(roundRadiusPanel1Layout);
+        roundRadiusPanel1Layout.setHorizontalGroup(
+            roundRadiusPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(roundRadiusPanel1Layout.createSequentialGroup()
+                .addGap(15, 15, 15)
+                .addGroup(roundRadiusPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel7)
+                    .addComponent(jLabel1))
+                .addContainerGap(34, Short.MAX_VALUE))
+        );
+        roundRadiusPanel1Layout.setVerticalGroup(
+            roundRadiusPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(roundRadiusPanel1Layout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 49, Short.MAX_VALUE)
+                .addComponent(jLabel7)
+                .addGap(19, 19, 19))
+        );
+
+        add(roundRadiusPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 130, 220, 170));
+
+        roundRadiusPanel2.setBackground(new java.awt.Color(203, 233, 198));
+        roundRadiusPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 25)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel3.setText("Total ");
+        roundRadiusPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, -1, -1));
+
+        jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 25)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel4.setText("Enrollments");
+        roundRadiusPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 50, -1, -1));
+
+        jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel9.setText("---");
+        roundRadiusPanel2.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, -1, -1));
+
+        add(roundRadiusPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 130, 220, 170));
+
+        roundRadiusPanel3.setBackground(new java.awt.Color(203, 233, 198));
+
+        jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 25)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel5.setText("Total Teachers");
+
+        jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel8.setText("---");
+
+        javax.swing.GroupLayout roundRadiusPanel3Layout = new javax.swing.GroupLayout(roundRadiusPanel3);
+        roundRadiusPanel3.setLayout(roundRadiusPanel3Layout);
+        roundRadiusPanel3Layout.setHorizontalGroup(
+            roundRadiusPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(roundRadiusPanel3Layout.createSequentialGroup()
+                .addGap(15, 15, 15)
+                .addGroup(roundRadiusPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel8)
+                    .addComponent(jLabel5))
+                .addContainerGap(34, Short.MAX_VALUE))
+        );
+        roundRadiusPanel3Layout.setVerticalGroup(
+            roundRadiusPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(roundRadiusPanel3Layout.createSequentialGroup()
+                .addGap(24, 24, 24)
+                .addComponent(jLabel5)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 43, Short.MAX_VALUE)
+                .addComponent(jLabel8)
+                .addGap(21, 21, 21))
+        );
+
+        add(roundRadiusPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 130, -1, -1));
+
+        roundRadiusPanel4.setBackground(new java.awt.Color(203, 233, 198));
+
+        jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 25)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel6.setText("Total Course");
+
+        jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel10.setText("---");
+
+        javax.swing.GroupLayout roundRadiusPanel4Layout = new javax.swing.GroupLayout(roundRadiusPanel4);
+        roundRadiusPanel4.setLayout(roundRadiusPanel4Layout);
+        roundRadiusPanel4Layout.setHorizontalGroup(
+            roundRadiusPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(roundRadiusPanel4Layout.createSequentialGroup()
+                .addGap(14, 14, 14)
+                .addGroup(roundRadiusPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel10)
+                    .addComponent(jLabel6))
+                .addContainerGap(58, Short.MAX_VALUE))
+        );
+        roundRadiusPanel4Layout.setVerticalGroup(
+            roundRadiusPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(roundRadiusPanel4Layout.createSequentialGroup()
+                .addGap(23, 23, 23)
+                .addComponent(jLabel6)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 44, Short.MAX_VALUE)
+                .addComponent(jLabel10)
+                .addGap(21, 21, 21))
+        );
+
+        add(roundRadiusPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 130, 220, 170));
+
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 30)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel2.setText("Dashboard");
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 30, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private RoundRadiusPanel roundRadiusPanel1;
+    private RoundRadiusPanel roundRadiusPanel2;
+    private RoundRadiusPanel roundRadiusPanel3;
+    private RoundRadiusPanel roundRadiusPanel4;
     // End of variables declaration//GEN-END:variables
 }

@@ -57,7 +57,7 @@ public class Connections {
             Connection connect = DriverManager.getConnection(DB_URL, DB_USERNAME, DB_PASSWORD);
             
              PreparedStatement validateuser = connect.prepareStatement("SELECT * FROM " + DB_USER_TABLE +
-                    " WHERE USERNAME = ? AND PASSWORD = ?");
+                    " WHERE username = ? AND paswword = ?");
              
              validateuser.setString(1, username);
              validateuser.setString(2, password);

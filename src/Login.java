@@ -24,6 +24,8 @@ public class Login extends javax.swing.JFrame {
         
         
     }
+    
+    Home home = new Home();
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -88,6 +90,7 @@ public class Login extends javax.swing.JFrame {
         jButton1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jButton1.setText("Submit");
         jButton1.setFocusable(false);
+        jButton1.addActionListener(this::jButton1ActionPerformed);
         LoginPnl.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 350, 130, 50));
 
         getContentPane().add(LoginPnl, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 300, 410, 450));
@@ -108,6 +111,19 @@ public class Login extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+         String username = usernameF.getText();
+        String password = new String(passwordF.getPassword());
+        
+        if(Connections.validUser(username, password)){
+            Login.this.dispose();
+            home.setVisible(true);
+            JOptionPane.showMessageDialog(this, "Login Successful!");
+        }else{
+            JOptionPane.showMessageDialog(null, "User Doesn't Exist!");
+        }
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -132,27 +148,7 @@ public class Login extends javax.swing.JFrame {
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(() -> new Login().setVisible(true));
-    }
-    
-    
-//    private void loginActionPerformed(java.awt.event.ActionEvent evt) {                                      
-//        
-//            String username = usernameF.getText();
-//        String password = new String(passwordF.getPassword());
-//        
-//        if(Connections.validUser(username, password)){
-//            
-//            Login.this.dispose();
-//            
-//            Home h = new Home();  
-//            h.Home();
-//            
-//            JOptionPane.showMessageDialog(login, "Login Successful!");
-//        }else{
-//            JOptionPane.showMessageDialog(null, "User Doesn't Exist!");
-//        }
-//        
-//    }       
+    }  
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel LoginPnl;

@@ -12,7 +12,10 @@ public class StudentRegistration extends javax.swing.JPanel {
     /**
      * Creates new form StudentRegistration
      */
-    public StudentRegistration() {
+    Home parent;
+    
+    public StudentRegistration(Home parent) {
+        this.parent = parent;
         initComponents();
     }
 
@@ -25,8 +28,6 @@ public class StudentRegistration extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel4 = new javax.swing.JPanel();
-        jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
         firstName = new javax.swing.JTextField();
@@ -40,79 +41,59 @@ public class StudentRegistration extends javax.swing.JPanel {
         jTextField4 = new javax.swing.JTextField();
         firstName3 = new javax.swing.JTextField();
         firstName4 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
+        nxtBtn = new javax.swing.JButton();
 
-        setPreferredSize(new java.awt.Dimension(1280, 770));
+        setPreferredSize(new java.awt.Dimension(1245, 710));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jPanel4.setBackground(new java.awt.Color(242, 242, 255));
-        jPanel4.setPreferredSize(new java.awt.Dimension(1280, 770));
-
-        jPanel1.setPreferredSize(new java.awt.Dimension(960, 910));
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel1.setText("Student Registration");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 40, -1, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 40, -1, -1));
 
         jTextField1.setText("Surname");
-        jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, 170, 45));
+        add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, 170, 45));
 
         firstName.setText("First Name");
         firstName.addActionListener(this::firstNameActionPerformed);
-        jPanel1.add(firstName, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 140, 170, 45));
+        add(firstName, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 140, 170, 45));
 
         firstName2.setText("Middle Name");
         firstName2.addActionListener(this::firstName2ActionPerformed);
-        jPanel1.add(firstName2, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 140, 170, 45));
+        add(firstName2, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 140, 170, 45));
 
         firstName1.setText("Suffix");
         firstName1.addActionListener(this::firstName1ActionPerformed);
-        jPanel1.add(firstName1, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 140, 108, 45));
-        jPanel1.add(datePicker1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 200, -1, 45));
+        add(firstName1, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 140, 108, 45));
+        add(datePicker1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 200, -1, 45));
 
         jRadioButton2.setText("Female");
-        jPanel1.add(jRadioButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 210, -1, -1));
+        add(jRadioButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 210, -1, -1));
 
         jTextField3.setText("Nationality");
-        jPanel1.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 310, 200, 40));
+        add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 310, 200, 40));
 
         jRadioButton1.setText("Male");
         jRadioButton1.addActionListener(this::jRadioButton1ActionPerformed);
-        jPanel1.add(jRadioButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 210, -1, -1));
+        add(jRadioButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 210, -1, -1));
 
         jTextField2.setText("Address");
         jTextField2.setPreferredSize(new java.awt.Dimension(64, 45));
-        jPanel1.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 260, 541, 40));
+        add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 260, 541, 40));
 
         jTextField4.setText("Previous School Attended");
-        jPanel1.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 140, 550, 45));
+        add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 140, 550, 45));
 
         firstName3.setText("Chosen Course/Program");
         firstName3.addActionListener(this::firstName3ActionPerformed);
-        jPanel1.add(firstName3, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 210, 350, 45));
+        add(firstName3, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 210, 350, 45));
 
         firstName4.setText("Last Year Level Completed");
         firstName4.addActionListener(this::firstName4ActionPerformed);
-        jPanel1.add(firstName4, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 210, 179, 45));
+        add(firstName4, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 210, 179, 45));
 
-        jButton1.setText("Next");
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1010, 630, 172, 67));
-
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1282, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
-        );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 770, Short.MAX_VALUE)
-        );
-
-        add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 770));
+        nxtBtn.setText("Next");
+        nxtBtn.addActionListener(this::nxtBtnActionPerformed);
+        add(nxtBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(1010, 630, 172, 67));
     }// </editor-fold>//GEN-END:initComponents
 
     private void firstName4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_firstName4ActionPerformed
@@ -139,6 +120,10 @@ public class StudentRegistration extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_firstNameActionPerformed
 
+    private void nxtBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nxtBtnActionPerformed
+        parent.setPanel(new StudentRegistrationRequiredDocu(parent));
+    }//GEN-LAST:event_nxtBtnActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private DatePicker datePicker1;
@@ -147,15 +132,13 @@ public class StudentRegistration extends javax.swing.JPanel {
     private javax.swing.JTextField firstName2;
     private javax.swing.JTextField firstName3;
     private javax.swing.JTextField firstName4;
-    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel4;
     private javax.swing.JRadioButton jRadioButton1;
     private javax.swing.JRadioButton jRadioButton2;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField4;
+    private javax.swing.JButton nxtBtn;
     // End of variables declaration//GEN-END:variables
 }

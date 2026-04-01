@@ -12,7 +12,10 @@ public class StudentRegistrationRequiredDocu extends javax.swing.JPanel {
     /**
      * Creates new form StudentRegistration
      */
-    public StudentRegistrationRequiredDocu() {
+    Home parent;
+    
+    public StudentRegistrationRequiredDocu(Home parent) {
+        this.parent = parent;
         initComponents();
     }
 
@@ -25,8 +28,7 @@ public class StudentRegistrationRequiredDocu extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel2 = new javax.swing.JPanel();
-        jButton3 = new javax.swing.JButton();
+        backBtn = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
@@ -45,30 +47,28 @@ public class StudentRegistrationRequiredDocu extends javax.swing.JPanel {
         jLabel14 = new javax.swing.JLabel();
         fileUploader5 = new FileUploader();
         jLabel15 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
+        nextBtn = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
 
         setMinimumSize(new java.awt.Dimension(1280, 770));
-        setPreferredSize(new java.awt.Dimension(1280, 770));
+        setPreferredSize(new java.awt.Dimension(1245, 710));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jButton3.setText("Back");
-        jButton3.addActionListener(this::jButton3ActionPerformed);
-        jPanel2.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 630, 172, 70));
+        backBtn.setText("Back");
+        backBtn.addActionListener(this::backBtnActionPerformed);
+        add(backBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 610, 172, 70));
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel1.setText("Document");
-        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 170, -1, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 170, -1, -1));
 
         jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel4.setText("Upload");
-        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 170, -1, -1));
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 170, -1, -1));
 
         jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel7.setText("Birth Certificate(PSA)");
-        jPanel2.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 270, -1, -1));
+        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 270, -1, -1));
 
         javax.swing.GroupLayout fileUploader1Layout = new javax.swing.GroupLayout(fileUploader1);
         fileUploader1.setLayout(fileUploader1Layout);
@@ -81,19 +81,19 @@ public class StudentRegistrationRequiredDocu extends javax.swing.JPanel {
             .addGap(0, 54, Short.MAX_VALUE)
         );
 
-        jPanel2.add(fileUploader1, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 250, -1, 54));
+        add(fileUploader1, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 250, -1, 54));
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel3.setText("Status");
-        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1100, 170, -1, -1));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1100, 170, -1, -1));
 
         jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel5.setText("Pending");
-        jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 260, -1, -1));
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 260, -1, -1));
 
         jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel8.setText("Pending");
-        jPanel2.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 320, -1, -1));
+        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 320, -1, -1));
 
         javax.swing.GroupLayout fileUploader2Layout = new javax.swing.GroupLayout(fileUploader2);
         fileUploader2.setLayout(fileUploader2Layout);
@@ -106,15 +106,15 @@ public class StudentRegistrationRequiredDocu extends javax.swing.JPanel {
             .addGap(0, 54, Short.MAX_VALUE)
         );
 
-        jPanel2.add(fileUploader2, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 310, -1, 54));
+        add(fileUploader2, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 310, -1, 54));
 
         jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel9.setText("Form 137/ Form 138");
-        jPanel2.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 320, -1, -1));
+        add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 320, -1, -1));
 
         jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel10.setText("Pending");
-        jPanel2.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 380, -1, -1));
+        add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 380, -1, -1));
 
         javax.swing.GroupLayout fileUploader3Layout = new javax.swing.GroupLayout(fileUploader3);
         fileUploader3.setLayout(fileUploader3Layout);
@@ -127,15 +127,15 @@ public class StudentRegistrationRequiredDocu extends javax.swing.JPanel {
             .addGap(0, 54, Short.MAX_VALUE)
         );
 
-        jPanel2.add(fileUploader3, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 370, -1, 54));
+        add(fileUploader3, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 370, -1, 54));
 
         jLabel11.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel11.setText("Good Moral Certificate");
-        jPanel2.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 390, -1, -1));
+        add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 390, -1, -1));
 
         jLabel12.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel12.setText("Pending");
-        jPanel2.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 440, -1, -1));
+        add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 440, -1, -1));
 
         javax.swing.GroupLayout fileUploader4Layout = new javax.swing.GroupLayout(fileUploader4);
         fileUploader4.setLayout(fileUploader4Layout);
@@ -148,15 +148,15 @@ public class StudentRegistrationRequiredDocu extends javax.swing.JPanel {
             .addGap(0, 54, Short.MAX_VALUE)
         );
 
-        jPanel2.add(fileUploader4, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 430, -1, 54));
+        add(fileUploader4, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 430, -1, 54));
 
         jLabel13.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel13.setText("2x2 ID Picture ");
-        jPanel2.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 450, -1, -1));
+        add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 450, -1, -1));
 
         jLabel14.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel14.setText("Pending");
-        jPanel2.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 500, -1, -1));
+        add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 500, -1, -1));
 
         javax.swing.GroupLayout fileUploader5Layout = new javax.swing.GroupLayout(fileUploader5);
         fileUploader5.setLayout(fileUploader5Layout);
@@ -169,40 +169,37 @@ public class StudentRegistrationRequiredDocu extends javax.swing.JPanel {
             .addGap(0, 54, Short.MAX_VALUE)
         );
 
-        jPanel2.add(fileUploader5, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 490, -1, 54));
+        add(fileUploader5, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 490, -1, 54));
 
         jLabel15.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel15.setText("Certificate of Graduation");
-        jPanel2.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 510, -1, -1));
+        add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 510, -1, -1));
 
-        jButton2.setText("Next");
-        jButton2.addActionListener(this::jButton2ActionPerformed);
-        jPanel2.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1010, 630, 172, 67));
+        nextBtn.setText("Next");
+        nextBtn.addActionListener(this::nextBtnActionPerformed);
+        add(nextBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 610, 172, 67));
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel2.setText("Student Registration");
-        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 40, -1, -1));
-
-        add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 770));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 40, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void nextBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nextBtnActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_nextBtnActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3ActionPerformed
+    private void backBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backBtnActionPerformed
+         parent.setPanel(new StudentRegistration(parent));
+    }//GEN-LAST:event_backBtnActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton backBtn;
     private FileUploader fileUploader1;
     private FileUploader fileUploader2;
     private FileUploader fileUploader3;
     private FileUploader fileUploader4;
     private FileUploader fileUploader5;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -217,6 +214,6 @@ public class StudentRegistrationRequiredDocu extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JPanel jPanel2;
+    private javax.swing.JButton nextBtn;
     // End of variables declaration//GEN-END:variables
 }

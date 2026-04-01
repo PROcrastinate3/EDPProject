@@ -25,8 +25,7 @@ public class GradeManagement extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel4 = new javax.swing.JPanel();
-        jPanel1 = new javax.swing.JPanel();
+        roundRadiusPanel2 = new RoundRadiusPanel();
         roundRadiusPanel1 = new RoundRadiusPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -43,14 +42,20 @@ public class GradeManagement extends javax.swing.JPanel {
         setPreferredSize(new java.awt.Dimension(1280, 770));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel4.setBackground(new java.awt.Color(242, 242, 255));
-        jPanel4.setPreferredSize(new java.awt.Dimension(1280, 770));
+        javax.swing.GroupLayout roundRadiusPanel2Layout = new javax.swing.GroupLayout(roundRadiusPanel2);
+        roundRadiusPanel2.setLayout(roundRadiusPanel2Layout);
+        roundRadiusPanel2Layout.setHorizontalGroup(
+            roundRadiusPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+        roundRadiusPanel2Layout.setVerticalGroup(
+            roundRadiusPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
 
-        jPanel1.setPreferredSize(new java.awt.Dimension(960, 910));
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        add(roundRadiusPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 320, -1, -1));
 
         roundRadiusPanel1.setBackground(new java.awt.Color(216, 216, 216));
-        roundRadiusPanel1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, new java.awt.Color(0, 0, 0)));
         roundRadiusPanel1.setLayout(new java.awt.GridLayout(1, 4, 100, 0));
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
@@ -69,11 +74,11 @@ public class GradeManagement extends javax.swing.JPanel {
         jLabel5.setText("Action");
         roundRadiusPanel1.add(jLabel5);
 
-        jPanel1.add(roundRadiusPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 150, 1060, 60));
+        add(roundRadiusPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 120, 1060, 60));
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel2.setText("Grade Management");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 40, -1, -1));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 40, -1, -1));
 
         jPanel2.setBackground(new java.awt.Color(204, 204, 204));
         jPanel2.setPreferredSize(new java.awt.Dimension(1040, 34));
@@ -99,26 +104,7 @@ public class GradeManagement extends javax.swing.JPanel {
 
         jScrollPane1.setViewportView(jPanel2);
 
-        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 210, 1060, 50));
-
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1282, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 758, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-
-        add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 770));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 210, 1060, 50));
     }// </editor-fold>//GEN-END:initComponents
 
 
@@ -132,10 +118,9 @@ public class GradeManagement extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
-    private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel4;
     private javax.swing.JScrollPane jScrollPane1;
     private RoundRadiusPanel roundRadiusPanel1;
+    private RoundRadiusPanel roundRadiusPanel2;
     // End of variables declaration//GEN-END:variables
 }

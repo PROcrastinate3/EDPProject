@@ -16,8 +16,9 @@ public class Login extends javax.swing.JFrame {
      */
     public Login() {
         initComponents();
-        roundRadiusPanel1.setBackground(new java.awt.Color(0, 153, 0, 125));
-        setExtendedState(javax.swing.JFrame.MAXIMIZED_BOTH);
+        setLocationRelativeTo(null);
+        roundRadiusPanel2.setBackground(new java.awt.Color(0, 153, 0, 125));
+        
     }
 
     /**
@@ -30,7 +31,7 @@ public class Login extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        roundRadiusPanel1 = new RoundRadiusPanel();
+        roundRadiusPanel2 = new RoundRadiusPanel();
         jLabel6 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
@@ -45,9 +46,10 @@ public class Login extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
-        setMaximumSize(new java.awt.Dimension(1923, 1164));
-        setMinimumSize(new java.awt.Dimension(1923, 1164));
-        setPreferredSize(new java.awt.Dimension(1920, 1080));
+        setMaximumSize(new java.awt.Dimension(1280, 940));
+        setMinimumSize(new java.awt.Dimension(1280, 940));
+        setPreferredSize(new java.awt.Dimension(1280, 940));
+        setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
@@ -66,15 +68,12 @@ public class Login extends javax.swing.JFrame {
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 990, -1, 90));
 
-        roundRadiusPanel1.setBackground(new java.awt.Color(0, 153, 0));
-        roundRadiusPanel1.setPreferredSize(new java.awt.Dimension(410, 450));
-
         jLabel6.setBackground(new java.awt.Color(255, 255, 255));
         jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 30)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("LOGO");
 
-        jLabel3.setText("__________________________________________________________________________________");
+        jLabel3.setText("____________________________________________________________________________________");
 
         jLabel4.setBackground(new java.awt.Color(255, 255, 255));
         jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
@@ -94,43 +93,42 @@ public class Login extends javax.swing.JFrame {
         jButton1.setText("Submit");
         jButton1.setFocusable(false);
 
-        javax.swing.GroupLayout roundRadiusPanel1Layout = new javax.swing.GroupLayout(roundRadiusPanel1);
-        roundRadiusPanel1.setLayout(roundRadiusPanel1Layout);
-        roundRadiusPanel1Layout.setHorizontalGroup(
-            roundRadiusPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(roundRadiusPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(roundRadiusPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel3)
-                    .addGroup(roundRadiusPanel1Layout.createSequentialGroup()
-                        .addGap(160, 160, 160)
+        javax.swing.GroupLayout roundRadiusPanel2Layout = new javax.swing.GroupLayout(roundRadiusPanel2);
+        roundRadiusPanel2.setLayout(roundRadiusPanel2Layout);
+        roundRadiusPanel2Layout.setHorizontalGroup(
+            roundRadiusPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(roundRadiusPanel2Layout.createSequentialGroup()
+                .addGroup(roundRadiusPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(roundRadiusPanel2Layout.createSequentialGroup()
+                        .addGap(166, 166, 166)
                         .addComponent(jLabel6))
-                    .addGroup(roundRadiusPanel1Layout.createSequentialGroup()
-                        .addGap(30, 30, 30)
+                    .addGroup(roundRadiusPanel2Layout.createSequentialGroup()
+                        .addGap(36, 36, 36)
                         .addComponent(jLabel4))
-                    .addGroup(roundRadiusPanel1Layout.createSequentialGroup()
-                        .addGap(40, 40, 40)
+                    .addGroup(roundRadiusPanel2Layout.createSequentialGroup()
+                        .addGap(46, 46, 46)
                         .addComponent(jLabel8))
-                    .addGroup(roundRadiusPanel1Layout.createSequentialGroup()
-                        .addGap(40, 40, 40)
+                    .addGroup(roundRadiusPanel2Layout.createSequentialGroup()
+                        .addGap(46, 46, 46)
                         .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 320, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(roundRadiusPanel1Layout.createSequentialGroup()
-                        .addGap(40, 40, 40)
+                    .addGroup(roundRadiusPanel2Layout.createSequentialGroup()
+                        .addGap(46, 46, 46)
                         .addComponent(jLabel7))
-                    .addGroup(roundRadiusPanel1Layout.createSequentialGroup()
-                        .addGap(40, 40, 40)
+                    .addGroup(roundRadiusPanel2Layout.createSequentialGroup()
+                        .addGap(46, 46, 46)
                         .addComponent(jPasswordField1, javax.swing.GroupLayout.PREFERRED_SIZE, 320, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(roundRadiusPanel1Layout.createSequentialGroup()
-                        .addGap(120, 120, 120)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(roundRadiusPanel2Layout.createSequentialGroup()
+                        .addGap(126, 126, 126)
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 416, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        roundRadiusPanel1Layout.setVerticalGroup(
-            roundRadiusPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(roundRadiusPanel1Layout.createSequentialGroup()
+        roundRadiusPanel2Layout.setVerticalGroup(
+            roundRadiusPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(roundRadiusPanel2Layout.createSequentialGroup()
                 .addGap(30, 30, 30)
-                .addGroup(roundRadiusPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(roundRadiusPanel1Layout.createSequentialGroup()
+                .addGroup(roundRadiusPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(roundRadiusPanel2Layout.createSequentialGroup()
                         .addGap(40, 40, 40)
                         .addComponent(jLabel3))
                     .addComponent(jLabel6))
@@ -149,22 +147,21 @@ public class Login extends javax.swing.JFrame {
                 .addContainerGap(50, Short.MAX_VALUE))
         );
 
-        getContentPane().add(roundRadiusPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 220, -1, -1));
+        getContentPane().add(roundRadiusPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 250, 410, 450));
 
         jLabel1.setBackground(new java.awt.Color(0, 153, 0, 100));
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/image 1.png"))); // NOI18N
-        jLabel1.setText("asas");
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/loginbg1.png"))); // NOI18N
         jLabel1.setPreferredSize(new java.awt.Dimension(1440, 940));
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-220, 140, 1660, 940));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-140, 90, 1500, -1));
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         jLabel2.setText("Sign in with your account to proceed");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 70, -1, -1));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 80, -1, -1));
 
         jLabel5.setBackground(new java.awt.Color(255, 255, 255));
         jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 30)); // NOI18N
         jLabel5.setText("LOGO");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 20, -1, -1));
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 30, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -207,6 +204,6 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPasswordField jPasswordField1;
     private javax.swing.JTextField jTextField1;
-    private RoundRadiusPanel roundRadiusPanel1;
+    private RoundRadiusPanel roundRadiusPanel2;
     // End of variables declaration//GEN-END:variables
 }

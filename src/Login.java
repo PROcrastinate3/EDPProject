@@ -93,7 +93,7 @@ public class Login extends javax.swing.JFrame {
         jButton1.addActionListener(this::jButton1ActionPerformed);
         LoginPnl.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 350, 130, 50));
 
-        getContentPane().add(LoginPnl, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 300, 410, 450));
+        getContentPane().add(LoginPnl, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 240, 410, 450));
 
         jLabel1.setBackground(new java.awt.Color(0, 153, 0, 100));
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/loginbg1.png"))); // NOI18N

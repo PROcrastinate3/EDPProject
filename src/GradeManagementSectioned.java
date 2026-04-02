@@ -8,12 +8,18 @@
  * @author Spooky
  */
 public class GradeManagementSectioned extends javax.swing.JPanel {
-
+private PanelSwitcher switcher;
     /**
      * Creates new form StudentRegistration
      */
-    public GradeManagementSectioned() {
+    
+    public GradeManagementSectioned(PanelSwitcher switcher) {
+        this.switcher = switcher;
         initComponents();
+        
+        backBtn.addActionListener(e -> {
+            switcher.switchPanel(new GradeManagement(switcher));
+        });
     }
 
     /**
@@ -41,6 +47,7 @@ public class GradeManagementSectioned extends javax.swing.JPanel {
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jLabel13 = new javax.swing.JLabel();
+        backBtn = new javax.swing.JButton();
 
         setPreferredSize(new java.awt.Dimension(1280, 770));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -52,7 +59,6 @@ public class GradeManagementSectioned extends javax.swing.JPanel {
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         roundRadiusPanel1.setBackground(new java.awt.Color(216, 216, 216));
-        roundRadiusPanel1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, new java.awt.Color(0, 0, 0)));
         roundRadiusPanel1.setLayout(new java.awt.GridLayout(1, 4, 100, 0));
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
@@ -117,21 +123,20 @@ public class GradeManagementSectioned extends javax.swing.JPanel {
 
         jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 210, 1060, 50));
 
+        backBtn.setText("BACK");
+        jPanel1.add(backBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(999, 647, 130, 60));
+
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
-                .addContainerGap()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1282, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 758, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 770, Short.MAX_VALUE)
         );
 
         add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 770));
@@ -143,6 +148,7 @@ public class GradeManagementSectioned extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton backBtn;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;

@@ -10,14 +10,14 @@ import javax.swing.JPanel;
  *
  * @author john mark
  */
-public class Home extends javax.swing.JFrame implements PanelSwitcher{
+public class HomeTeacher extends javax.swing.JFrame implements PanelSwitcher {
 
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(Home.class.getName());
 
     /**
      * Creates new form Home
      */
-    public Home() {
+    public HomeTeacher() {
         initComponents();
         setLocationRelativeTo(null);
         setLayout(new java.awt.BorderLayout());
@@ -42,15 +42,12 @@ public class Home extends javax.swing.JFrame implements PanelSwitcher{
         jLabel4 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         generateReport = new javax.swing.JLabel();
-        studReg = new javax.swing.JLabel();
-        CourseEnroll = new javax.swing.JLabel();
         gradeMan = new javax.swing.JLabel();
         dashBoard = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         MainPanel = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(1280, 940));
         setResizable(false);
         setSize(new java.awt.Dimension(1280, 940));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -69,26 +66,7 @@ public class Home extends javax.swing.JFrame implements PanelSwitcher{
 
         generateReport.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         generateReport.setText("Generate Report");
-        getContentPane().add(generateReport, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 140, -1, -1));
-
-        studReg.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
-        studReg.setText("Student Registration");
-        studReg.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                studRegMouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                studRegMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                studRegMouseExited(evt);
-            }
-        });
-        getContentPane().add(studReg, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 140, -1, -1));
-
-        CourseEnroll.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
-        CourseEnroll.setText("Course Enrollment");
-        getContentPane().add(CourseEnroll, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 140, -1, -1));
+        getContentPane().add(generateReport, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 140, -1, -1));
 
         gradeMan.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         gradeMan.setText("Grade Management");
@@ -103,7 +81,7 @@ public class Home extends javax.swing.JFrame implements PanelSwitcher{
                 gradeManMouseExited(evt);
             }
         });
-        getContentPane().add(gradeMan, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 140, -1, -1));
+        getContentPane().add(gradeMan, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 140, -1, -1));
 
         dashBoard.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         dashBoard.setText("Dashboard");
@@ -118,7 +96,7 @@ public class Home extends javax.swing.JFrame implements PanelSwitcher{
                 dashBoardMouseExited(evt);
             }
         });
-        getContentPane().add(dashBoard, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 140, -1, -1));
+        getContentPane().add(dashBoard, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 140, -1, -1));
 
         jLabel1.setText("________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 150, 1920, -1));
@@ -147,16 +125,9 @@ public class Home extends javax.swing.JFrame implements PanelSwitcher{
 
     }//GEN-LAST:event_dashBoardMouseClicked
 
-    private void studRegMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_studRegMouseClicked
-        MainPanel.removeAll();
-        setPanel(new StudentRegistration(this));
-        MainPanel.revalidate();
-        MainPanel.repaint();
-    }//GEN-LAST:event_studRegMouseClicked
-
     private void gradeManMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_gradeManMouseClicked
         MainPanel.removeAll();
-        setPanel(new GradeManagement(this));
+        //setPanel(new GradeManagement(this));
         MainPanel.revalidate();
         MainPanel.repaint();
     }//GEN-LAST:event_gradeManMouseClicked
@@ -170,16 +141,6 @@ public class Home extends javax.swing.JFrame implements PanelSwitcher{
         dashBoard.setForeground(java.awt.Color.BLACK);
         dashBoard.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
     }//GEN-LAST:event_dashBoardMouseExited
-
-    private void studRegMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_studRegMouseEntered
-        studReg.setForeground(java.awt.Color.BLUE);
-        studReg.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-    }//GEN-LAST:event_studRegMouseEntered
-
-    private void studRegMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_studRegMouseExited
-        studReg.setForeground(java.awt.Color.BLACK);
-        studReg.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-    }//GEN-LAST:event_studRegMouseExited
 
     private void gradeManMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_gradeManMouseEntered
         gradeMan.setForeground(java.awt.Color.BLUE);
@@ -217,7 +178,6 @@ public class Home extends javax.swing.JFrame implements PanelSwitcher{
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel CourseEnroll;
     private javax.swing.JPanel MainPanel;
     private javax.swing.JLabel dashBoard;
     private javax.swing.JLabel generateReport;
@@ -226,7 +186,6 @@ public class Home extends javax.swing.JFrame implements PanelSwitcher{
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel studReg;
     // End of variables declaration//GEN-END:variables
 
     @Override

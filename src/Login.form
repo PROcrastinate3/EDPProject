@@ -41,7 +41,7 @@
     <Container class="javax.swing.JPanel" name="LoginPnl">
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="440" y="300" width="410" height="450"/>
+          <AbsoluteConstraints x="440" y="240" width="410" height="450"/>
         </Constraint>
       </Constraints>
 

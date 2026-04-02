@@ -8,12 +8,18 @@
  * @author Spooky
  */
 public class GradeManagement extends javax.swing.JPanel {
-
+    private PanelSwitcher switcher;
     /**
      * Creates new form StudentRegistration
      */
-    public GradeManagement() {
+   
+    public GradeManagement(PanelSwitcher switcher) {
+        this.switcher = switcher;
         initComponents();
+        
+        Section.addActionListener(e -> {
+            switcher.switchPanel(new GradeManagementSectioned(switcher));
+        });
     }
 
     /**
@@ -37,7 +43,7 @@ public class GradeManagement extends javax.swing.JPanel {
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        Section = new javax.swing.JButton();
 
         setPreferredSize(new java.awt.Dimension(1280, 770));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -97,10 +103,10 @@ public class GradeManagement extends javax.swing.JPanel {
         jLabel8.setText("Subject");
         jPanel2.add(jLabel8);
 
-        jButton1.setBackground(new java.awt.Color(204, 204, 204));
-        jButton1.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
-        jButton1.setText("Manage Grades");
-        jPanel2.add(jButton1);
+        Section.setBackground(new java.awt.Color(204, 204, 204));
+        Section.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
+        Section.setText("Manage Grades");
+        jPanel2.add(Section);
 
         jScrollPane1.setViewportView(jPanel2);
 
@@ -109,7 +115,7 @@ public class GradeManagement extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton Section;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

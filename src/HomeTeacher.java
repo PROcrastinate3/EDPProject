@@ -48,8 +48,9 @@ public class HomeTeacher extends javax.swing.JFrame implements PanelSwitcher {
         MainPanel = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMinimumSize(new java.awt.Dimension(1263, 903));
         setResizable(false);
-        setSize(new java.awt.Dimension(1280, 940));
+        setSize(new java.awt.Dimension(1263, 903));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel3.setFont(new java.awt.Font("Times New Roman", 0, 45)); // NOI18N
@@ -127,7 +128,7 @@ public class HomeTeacher extends javax.swing.JFrame implements PanelSwitcher {
 
     private void gradeManMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_gradeManMouseClicked
         MainPanel.removeAll();
-        //setPanel(new GradeManagement(this));
+        setPanel(new GradeManagement(this));
         MainPanel.revalidate();
         MainPanel.repaint();
     }//GEN-LAST:event_gradeManMouseClicked
@@ -174,7 +175,7 @@ public class HomeTeacher extends javax.swing.JFrame implements PanelSwitcher {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new Home().setVisible(true));
+        java.awt.EventQueue.invokeLater(() -> new HomeTeacher().setVisible(true));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
